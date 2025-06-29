@@ -187,6 +187,206 @@ blockquote p {
   transform: translateY(-1px);
 }
 
+/* Why Choose Us Section */
+#por-que-elegirnos {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.why-choose-summary {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-choose-summary p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.why-choose-summary strong {
+  color: #D4421A;
+}
+
+.why-choose-summary .content-links {
+  margin-top: 40px;
+  padding: 30px 0;
+  border-top: 1px solid #ecf0f1;
+}
+
+/* Videos Section - REMOVED
+#videos {
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+}
+
+.videos-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.youtube-section {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.youtube-section h3 {
+  color: #D4421A;
+  margin-bottom: 25px;
+}
+
+.youtube-section p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.youtube-cta {
+  margin-top: 30px;
+}
+
+.coming-soon {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+*/
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+/* Important Considerations Section */
+#consideraciones {
+  background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+}
+
+.considerations-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.consideration-item {
+  margin-bottom: 40px;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  transition: none;
+}
+
+.consideration-item:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.consideration-item h3 {
+  color: #D4421A;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.consideration-item p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.consideration-item blockquote {
+  border-left: 6px solid #D4421A;
+  padding-left: 30px;
+  margin: 25px 0;
+  font-size: 1.2rem;
+  color: #44443C;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.consideration-item cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Enhanced Contact Section */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.social-media {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.social-media h3 {
+  color: #D4421A;
+  margin-bottom: 20px;
+}
+
+.social-media p {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #44443C;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #D4421A;
+  color: white;
+  border-color: #D4421A;
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  font-size: 1.2rem;
+}
+
+.social-note {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
 /* Enhanced nosotros section */
 #nosotros {
   background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
@@ -328,13 +528,6 @@ blockquote p {
 }
 
 /* Contact section */
-.contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  margin-top: 50px;
-}
-
 .contact-info, .contact-message {
   background: white;
   padding: 40px;
@@ -447,19 +640,21 @@ footer p {
 
 .cta-button {
   display: inline-block;
-  background-color: #D4421A;
+  background: linear-gradient(135deg, #D4421A 0%, #B43B09 100%);
   color: white;
   text-decoration: none;
   padding: 15px 30px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 500;
   font-size: 1.1rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 66, 26, 0.3);
 }
 
 .cta-button:hover {
-  background-color: #B43B09;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 66, 26, 0.4);
+  color: white;
 }
 
 /* Responsive design */
@@ -575,18 +770,17 @@ footer p {
   
   nav ul {
     flex-direction: column;
-    gap: 15px;
-    text-align: center;
+    gap: 20px;
   }
   
   .cta-button {
-    padding: 12px 24px;
+    padding: 12px 20px;
     font-size: 1rem;
   }
   
   /* Nosotros section responsive */
   #nosotros h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   
   .intro-content p {
@@ -594,7 +788,111 @@ footer p {
   }
   
   blockquote {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-left: 15px;
   }
+  
+  /* New sections small mobile styles - REMOVED
+  .differentiators li {
+    padding: 15px;
+  }
+  
+  .main-differentiator {
+    padding: 15px;
+  }
+  
+  .main-differentiator blockquote {
+    font-size: 1.4rem;
+  }
+  
+  .reason-item {
+    padding: 20px;
+  }
+  
+  .call-to-action {
+    padding: 25px 15px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.1rem;
+  }
+  
+  .youtube-section {
+    padding: 25px 15px;
+  }
+  */
+  
+  .consideration-item {
+    padding: 20px;
+  }
+  
+  .social-media {
+    padding: 25px 15px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .why-choose-summary p {
+    font-size: 1.1rem;
+  }
+}
+
+/* New sections responsive styles - REMOVED
+.differentiators ul {
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.differentiators li {
+  padding: 20px;
+}
+
+.main-differentiator {
+  padding: 20px;
+}
+
+.main-differentiator blockquote {
+  font-size: 1.6rem;
+}
+
+.reasons-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.reason-item {
+  padding: 25px;
+}
+
+.call-to-action {
+  padding: 30px 20px;
+}
+
+.videos-content {
+  padding: 0 20px;
+}
+
+.youtube-section {
+  padding: 30px 20px;
+}
+*/
+
+.considerations-content {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.consideration-item {
+  padding: 25px;
+}
+
+.social-links {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.social-link {
+  padding: 10px 12px;
 }
