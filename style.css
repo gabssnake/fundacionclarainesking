@@ -38,7 +38,7 @@ body {
   line-height: 1.8;
   color: var(--color-text);
   background-color: var(--color-bg-main);
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   font-size: 18px;
@@ -178,6 +178,34 @@ main {
   border-radius: 12px 0 0 12px;
 }
 
+/* Two-column layout for services and articles on larger screens */
+#homepage #programas,
+#homepage #articulos {
+  display: flex !important;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  #homepage #programas,
+  #homepage #articulos {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  
+  #homepage #programas h2,
+  #homepage #articulos h2 {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+  }
+  
+  #homepage #programas article,
+  #homepage #articulos article {
+    flex: 0 0 calc(50% - 1.5rem) !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 article h3 {
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -196,7 +224,7 @@ article h3 a:hover {
 
 /* Blockquotes */
 blockquote {
-  margin: 3rem 0;
+  margin: 2rem 0;
   padding: 2rem 2.5rem;
   color: var(--color-text);
   border-left: 6px solid var(--color-border-accent);
@@ -205,6 +233,10 @@ blockquote {
   border-radius: 0 12px 12px 0;
   font-size: 1.25rem;
   line-height: 1.7;
+}
+
+blockquote p {
+  margin-bottom: 0;
 }
 
 blockquote cite {
@@ -290,13 +322,45 @@ main > article:only-child {
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid var(--color-border);
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 1.9;
 }
 
 main > article:only-child h1 {
   text-align: left;
   margin-bottom: 2rem;
+}
+
+main > article:only-child h2 {
+  font-size: 2.5rem;
+}
+
+main > article:only-child h3 {
+  font-size: 2rem;
+}
+
+main > article:only-child p {
+  font-size: 1.4rem;
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+}
+
+main > article:only-child ul,
+main > article:only-child ol {
+  font-size: 1.4rem;
+  line-height: 1.9;
+}
+
+main > article:only-child blockquote {
+  font-size: 1.4rem;
+  line-height: 1.9;
+  margin: 2rem 0;
+}
+
+main > article:only-child blockquote p {
+  margin-bottom: 0;
 }
 
 main > article:only-child aside {
