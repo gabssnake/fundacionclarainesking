@@ -41,6 +41,10 @@ header .container {
   width: auto;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -99,6 +103,14 @@ h3 {
   line-height: 1.4;
 }
 
+h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #44443C;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
 p {
   margin-bottom: 20px;
   font-size: 1.1rem;
@@ -138,6 +150,21 @@ blockquote p {
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Read more links */
+.read-more {
+  color: #D4421A;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.read-more:hover {
+  color: #B43B09;
 }
 
 /* Services grid */
@@ -271,6 +298,69 @@ footer p {
   font-size: 1rem;
 }
 
+/* Single content page styles */
+.content-single {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.content-single h1 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.content-single h2 {
+  color: #D4421A;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.content-single .author {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.cta-section {
+  text-align: center;
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-top: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-section h3 {
+  color: #44443C;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #D4421A;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #B43B09;
+  transform: translateY(-2px);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   body {
@@ -287,6 +377,10 @@ footer p {
   
   h3 {
     font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
   }
   
   .container {
@@ -318,7 +412,9 @@ footer p {
   .service-card,
   .article-card,
   .contact-info,
-  .contact-message {
+  .contact-message,
+  .content-single,
+  .cta-section {
     padding: 30px;
   }
   
@@ -345,11 +441,17 @@ footer p {
     font-size: 1.3rem;
   }
   
+  h4 {
+    font-size: 1.1rem;
+  }
+  
   .content-block,
   .service-card,
   .article-card,
   .contact-info,
-  .contact-message {
+  .contact-message,
+  .content-single,
+  .cta-section {
     padding: 20px;
   }
   
@@ -357,5 +459,10 @@ footer p {
     flex-direction: column;
     gap: 15px;
     text-align: center;
+  }
+  
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 1rem;
   }
 }
