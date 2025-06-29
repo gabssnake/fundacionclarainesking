@@ -150,6 +150,8 @@ header nav ul {
   list-style: none;
   gap: var(--spacing-2xl);
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 header nav a {
