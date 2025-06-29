@@ -274,6 +274,16 @@ blockquote p {
   margin-bottom: 20px;
 }
 
+.service-card h3 a {
+  color: #D4421A;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.service-card h3 a:hover {
+  color: #B43B09;
+}
+
 /* Articles grid */
 .articles-grid {
   display: grid;
@@ -298,6 +308,16 @@ blockquote p {
 .article-card h3 {
   color: #8EC54C;
   margin-bottom: 15px;
+}
+
+.article-card h3 a {
+  color: #8EC54C;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.article-card h3 a:hover {
+  color: #7AB33A;
 }
 
 .author {
