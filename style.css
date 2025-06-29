@@ -120,21 +120,102 @@ p {
 /* Mission blockquote */
 .mission {
   text-align: center;
-  margin: 60px 0;
+  margin: 60px 0 40px;
 }
 
 blockquote {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-style: italic;
-  color: #7f8c8d;
-  border-left: 4px solid #D4421A;
-  padding-left: 30px;
+  color: #D4421A;
+  border-left: 6px solid #D4421A;
+  padding-left: 40px;
   margin: 30px 0;
-  line-height: 1.6;
+  line-height: 1.4;
+  font-weight: 300;
 }
 
 blockquote p {
   margin: 0;
+}
+
+/* Intro content */
+.intro-content {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.intro-content p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #44443C;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Content links */
+.content-links {
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px 0;
+  border-top: 1px solid #ecf0f1;
+}
+
+.content-links p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.content-links a {
+  color: #D4421A;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: rgba(212, 66, 26, 0.05);
+}
+
+.content-links a:hover {
+  color: #B43B09;
+  background-color: rgba(212, 66, 26, 0.1);
+  transform: translateY(-1px);
+}
+
+/* Enhanced nosotros section */
+#nosotros {
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  position: relative;
+}
+
+#nosotros::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #D4421A 50%, transparent 100%);
+}
+
+#nosotros h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  color: #44443C;
+  margin-bottom: 30px;
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+#nosotros .container {
+  position: relative;
+  z-index: 1;
 }
 
 /* Content grid */
@@ -426,6 +507,23 @@ footer p {
     font-size: 1.4rem;
     padding-left: 20px;
   }
+  
+  /* Nosotros section responsive */
+  #nosotros h1 {
+    font-size: 2.8rem;
+  }
+  
+  .intro-content p {
+    font-size: 1.2rem;
+  }
+  
+  .content-links {
+    padding: 20px 0;
+  }
+  
+  .content-links p {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -464,5 +562,19 @@ footer p {
   .cta-button {
     padding: 12px 24px;
     font-size: 1rem;
+  }
+  
+  /* Nosotros section responsive */
+  #nosotros h1 {
+    font-size: 2.2rem;
+  }
+  
+  .intro-content p {
+    font-size: 1.1rem;
+  }
+  
+  blockquote {
+    font-size: 1.3rem;
+    padding-left: 15px;
   }
 }
