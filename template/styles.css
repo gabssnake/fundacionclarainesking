@@ -5,7 +5,7 @@
   --color-primary-dark: #0f766e;
   --color-secondary: #06b6d4;
   --color-accent: #10b981;
-  --color-purple: #8b5cf6;
+  --color-red: #ef4444;
 
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
@@ -19,7 +19,6 @@
   --color-gray-900: #111827;
 
   --color-white: #ffffff;
-  --color-red: #ef4444;
   --color-accent-bg: #f0fdfa;
 
   /* Spacing */
@@ -58,9 +57,6 @@
   
   /* Effects */
   --hover-lift: translateY(-0.25rem);
-  
-  /* Grid Patterns */
-  --grid-3-cols: repeat(3, 1fr);
 }
 
 /* Reset and Base Styles */
@@ -100,43 +96,24 @@ body {
 }
 
 /* Typography */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-gray-900);
 }
 
-h1 {
-  font-size: var(--font-size-4xl);
-}
-h2 {
-  font-size: var(--font-size-3xl);
-}
-h3 {
-  font-size: var(--font-size-2xl);
-}
-h4 {
-  font-size: var(--font-size-xl);
-}
+h1 { font-size: var(--font-size-4xl); }
+h2 { font-size: var(--font-size-3xl); }
+h3 { font-size: var(--font-size-2xl); }
+h4 { font-size: var(--font-size-xl); }
 
 @media (min-width: 640px) {
-  h1 {
-    font-size: var(--font-size-5xl);
-  }
-  h2 {
-    font-size: var(--font-size-4xl);
-  }
+  h1 { font-size: var(--font-size-5xl); }
+  h2 { font-size: var(--font-size-4xl); }
 }
 
 @media (min-width: 1024px) {
-  h1 {
-    font-size: var(--font-size-6xl);
-  }
+  h1 { font-size: var(--font-size-6xl); }
 }
 
 p {
@@ -178,34 +155,17 @@ a:hover {
   color: var(--color-white);
 }
 
-.btn-secondary,
-.btn-outline {
+.btn-secondary {
   background-color: transparent;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
 
-.btn-secondary:hover,
-.btn-outline:hover {
+.btn-secondary:hover {
   background-color: var(--color-gray-50);
 }
 
-.btn-white {
-  background-color: var(--color-white);
-  color: var(--color-primary);
-}
-
-.btn-white:hover {
-  background-color: var(--color-gray-100);
-  color: var(--color-primary);
-}
-
-.btn-full {
-  width: 100%;
-  justify-content: center;
-}
-
-.btn svg.icon {
+.btn svg {
   width: 1rem;
   height: 1rem;
 }
@@ -215,6 +175,8 @@ a:hover {
   width: 1.5rem;
   height: 1.5rem;
   stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Header */
@@ -232,7 +194,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  padding: var(--spacing-md) 0;
 }
 
 .logo {
@@ -241,14 +203,13 @@ a:hover {
   color: var(--color-gray-900);
 }
 
-.logo-svg {
+.logo img {
   height: 2.5rem;
   width: auto;
-  max-width: 200px;
 }
 
 @media (max-width: 639px) {
-  .logo-svg {
+  .logo img {
     height: 2rem;
     max-width: 150px;
   }
@@ -282,7 +243,7 @@ a:hover {
 .mobile-menu-toggle {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 4px;
   background: none;
   border: none;
   cursor: pointer;
@@ -412,7 +373,7 @@ a:hover {
 
 @media (min-width: 640px) {
   .hero-features {
-    grid-template-columns: var(--grid-3-cols);
+    grid-template-columns: repeat(3, 1fr);
     max-width: none;
     align-items: start;
   }
@@ -609,7 +570,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .values-grid {
-    grid-template-columns: var(--grid-3-cols);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -681,7 +642,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   .programs-grid {
-    grid-template-columns: var(--grid-3-cols);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -788,7 +749,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   .articles-grid {
-    grid-template-columns: var(--grid-3-cols);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1047,7 +1008,7 @@ a:hover {
   margin-bottom: var(--spacing-md);
 }
 
-.footer-logo-svg {
+.footer-logo img {
   height: 2.5rem;
   width: auto;
   max-width: 200px;
@@ -1156,12 +1117,12 @@ a:hover {
   }
 }
 
-/* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
