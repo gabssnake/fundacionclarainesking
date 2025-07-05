@@ -25,13 +25,14 @@
                     <a href="#contact">¡Hablemos!</a>
                 </nav>
 
-                <button class="mobile-menu-toggle" aria-label="Abrir menú">
+                <label for="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Abrir menú">
                     <span></span>
                     <span></span>
                     <span></span>
-                </button>
+                </label>
             </div>
 
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
             <nav class="mobile-nav">
                 <a href="#about">La Fundación</a>
                 <a href="#programs">Programas y Servicios</a>
@@ -200,12 +201,12 @@
                             <li>Técnicas de estudio</li>
                             <li>Preparación para exámenes</li>
                         </ul>
-                        <button class="btn btn-outline">
+                        <a href="#" class="btn btn-outline">
                             Más información
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
-                        </button>
+                        </a>
                     </article>
 
                     <article class="program-card emotional">
@@ -221,12 +222,12 @@
                             <li>Talleres grupales</li>
                             <li>Manejo de emociones</li>
                         </ul>
-                        <button class="btn btn-outline">
+                        <a href="#" class="btn btn-outline">
                             Más información
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
-                        </button>
+                        </a>
                     </article>
 
                     <article class="program-card family">
@@ -245,12 +246,12 @@
                             <li>Escuela de padres</li>
                             <li>Dinámicas familiares</li>
                         </ul>
-                        <button class="btn btn-outline">
+                        <a href="#" class="btn btn-outline">
                             Más información
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
-                        </button>
+                        </a>
                     </article>
 
                     <article class="program-card talents">
@@ -266,24 +267,13 @@
                             <li>Desarrollo artístico</li>
                             <li>Liderazgo juvenil</li>
                         </ul>
-                        <button class="btn btn-outline">
+                        <a href="#" class="btn btn-outline">
                             Más información
                             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
-                        </button>
+                        </a>
                     </article>
-                </div>
-
-                <div class="programs-cta">
-                    <h3>¿Listo para comenzar este camino juntos?</h3>
-                    <p>Contáctanos para conocer más sobre nuestros programas y cómo podemos acompañar a tu familia en este proceso de crecimiento.</p>
-                    <button class="btn btn-white">
-                        Solicitar información
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </button>
                 </div>
             </div>
         </section>
@@ -374,15 +364,6 @@
                         </div>
                     </article>
                 </div>
-
-                <div class="newsletter">
-                    <h3>Mantente informado</h3>
-                    <p>Suscríbete a nuestro boletín para recibir los últimos artículos, recursos y novedades sobre desarrollo infantil y juvenil.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Tu correo electrónico" required>
-                        <button type="submit" class="btn btn-primary">Suscribirse</button>
-                    </form>
-                </div>
             </div>
         </section>
 
@@ -394,49 +375,6 @@
                 </header>
 
                 <div class="contact-content">
-                    <form class="contact-form">
-                        <h3>Envíanos un mensaje</h3>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstName">Nombre</label>
-                                <input type="text" id="firstName" name="firstName" placeholder="Tu nombre" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Apellido</label>
-                                <input type="text" id="lastName" name="lastName" placeholder="Tu apellido" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
-                        </div>
-                        <div class="form-group">
-                            <label for="program">Programa de interés</label>
-                            <select id="program" name="program">
-                                <option value="">Selecciona un programa</option>
-                                <option value="apoyo-academico">Apoyo Académico</option>
-                                <option value="bienestar-emocional">Bienestar Emocional</option>
-                                <option value="fortalecimiento-familiar">Fortalecimiento Familiar</option>
-                                <option value="desarrollo-talentos">Desarrollo de Talentos</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            Enviar mensaje
-                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path d="M22 2L11 13"/>
-                                <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
-                            </svg>
-                        </button>
-                    </form>
-
                     <aside class="contact-info">
                         <div class="contact-card">
                             <div class="contact-icon location">
@@ -577,7 +515,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
