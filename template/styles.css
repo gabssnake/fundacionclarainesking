@@ -914,11 +914,6 @@ a:hover {
   flex-shrink: 0;
 }
 
-.contact-icon.location {
-  background-color: #f0fdfa;
-  color: var(--color-primary);
-}
-
 .contact-icon.phone {
   background-color: #ecfeff;
   color: var(--color-secondary);
@@ -929,9 +924,14 @@ a:hover {
   color: var(--color-accent);
 }
 
-.contact-icon.schedule {
-  background-color: #f3e8ff;
-  color: var(--color-purple);
+.contact-icon.location {
+  background-color: #f0fdfa;
+  color: var(--color-primary);
+}
+
+.contact-icon.help {
+  background-color: #fef3c7;
+  color: #f59e0b;
 }
 
 .contact-icon svg {
@@ -942,6 +942,7 @@ a:hover {
 .contact-details h4 {
   font-size: var(--font-size-base);
   margin-bottom: var(--spacing-sm);
+  color: var(--color-gray-900);
 }
 
 .contact-details p,
@@ -953,12 +954,12 @@ a:hover {
 }
 
 .contact-details a {
-  color: var(--color-gray-600);
+  color: var(--color-primary);
   transition: var(--transition);
 }
 
 .contact-details a:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
 
 /* Footer */
