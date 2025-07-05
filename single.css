@@ -13,7 +13,7 @@ body {
 main article {
   max-width: var(--container-max-width);
   margin: 0 auto 4rem auto;
-  padding: 3rem 8rem;
+  padding: 3rem clamp(1rem, 4vw, 8rem);
   background: var(--color-beige-light);
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -21,14 +21,14 @@ main article {
 
 @media (min-width: 640px) {
   main article {
-    padding: 4rem 10rem;
+    padding: 4rem clamp(2rem, 6vw, 10rem);
     margin-bottom: 5rem;
   }
 }
 
 @media (min-width: 1024px) {
   main article {
-    padding: 5rem 12rem;
+    padding: 5rem clamp(3rem, 8vw, 12rem);
     margin-bottom: 6rem;
   }
 }
