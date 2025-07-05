@@ -525,6 +525,15 @@ a:hover {
   position: relative;
 }
 
+.about-photo {
+  width: 100%;
+  display: block;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 24px 0 rgba(0,0,0,0.10);
+  margin: 0 auto;
+  object-fit: cover;
+}
+
 .contact-list {
   display: grid;
   grid-template-columns: 1fr;
