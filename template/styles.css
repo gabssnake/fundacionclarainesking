@@ -306,7 +306,7 @@ a:hover {
 /* Hero Section */
 .hero {
   padding: 6rem 0 4rem;
-  background: linear-gradient(135deg, var(--color-beige-light), var(--color-beige-medium));
+  background: var(--color-beige-light);
   text-align: center;
 }
 
@@ -468,7 +468,7 @@ a:hover {
 /* About Section */
 #about {
   padding: var(--section-padding);
-  background-color: var(--color-beige-light);
+  background-color: var(--color-beige-dark);
 }
 
 .about-content {
@@ -523,7 +523,7 @@ a:hover {
 
 .visual-card {
   aspect-ratio: 1;
-  background: var(--color-beige-dark);
+  background: var(--color-beige-medium);
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
@@ -660,7 +660,7 @@ a:hover {
 /* Programs Section */
 #programs {
   padding: var(--section-padding);
-  background-color: var(--color-beige-medium);
+  background-color: var(--color-beige-light);
 }
 
 .programs-grid {
@@ -683,7 +683,7 @@ a:hover {
 }
 
 .program-card {
-  background-color: var(--color-beige-light);
+  background-color: var(--color-white);
   border-radius: var(--border-radius);
   padding: var(--spacing-xl);
   box-shadow: var(--shadow-lg);
@@ -796,7 +796,7 @@ a:hover {
 /* Articles Section */
 #articles {
   padding: var(--section-padding);
-  background-color: var(--color-beige-light);
+  background-color: var(--color-beige-dark);
 }
 
 .articles-grid {
@@ -819,7 +819,7 @@ a:hover {
 }
 
 .article-card {
-  background-color: var(--color-beige-light);
+  background-color: var(--color-beige-medium);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -949,7 +949,7 @@ a:hover {
 /* Considerations Section */
 #considerations {
   padding: var(--spacing-3xl) 0;
-  background-color: var(--color-beige-medium);
+  background-color: var(--color-beige-light);
 }
 
 .considerations-content {
@@ -980,7 +980,7 @@ a:hover {
 }
 
 .quote-card {
-  background-color: var(--color-beige-light);
+  background-color: var(--color-white);
   padding: var(--spacing-xl);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
@@ -1029,7 +1029,7 @@ a:hover {
 /* Contact Section */
 #contact {
   padding: var(--section-padding);
-  background-color: var(--color-beige-medium);
+  background-color: var(--color-beige-dark);
 }
 
 .contact-item {
@@ -1037,7 +1037,7 @@ a:hover {
   align-items: flex-start;
   gap: var(--spacing-md);
   padding: var(--spacing-lg);
-  background-color: var(--color-beige-light);
+  background-color: var(--color-beige-medium);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   border-left: 4px solid transparent;
