@@ -705,7 +705,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   .programs-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -846,7 +846,7 @@ a:hover {
 }
 
 .article-card {
-  background-color: var(--color-beige-medium);
+  background-color: var(--color-beige-light);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
