@@ -646,6 +646,12 @@ a:hover {
   }
 }
 
+@media (min-width: 1024px) {
+  .programs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .program-card {
   background-color: var(--color-white);
   border-radius: var(--border-radius-lg);
@@ -684,9 +690,21 @@ a:hover {
   color: var(--color-accent);
 }
 
-.program-card.talents .program-icon {
+.program-card.talents .program-icon,
+.program-card.career .program-icon,
+.program-card.reorientation .program-icon {
+  background-color: #fef3c7;
+  color: #f59e0b;
+}
+
+.program-card.psychological .program-icon {
   background-color: #f3e8ff;
   color: var(--color-purple);
+}
+
+.program-card.consulting .program-icon {
+  background-color: #ecfdf5;
+  color: var(--color-accent);
 }
 
 .program-icon svg {
@@ -696,6 +714,16 @@ a:hover {
 
 .program-card h3 {
   margin-bottom: var(--spacing-md);
+}
+
+.program-card h3 a {
+  color: var(--color-gray-900);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.program-card h3 a:hover {
+  color: var(--color-primary);
 }
 
 .program-card p {
