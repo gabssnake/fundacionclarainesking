@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Paths
-HOMEPAGE="template/index.html"
-FOLDERS=("template/articulos" "template/nosotros" "template/servicios")
+HOMEPAGE="index.html"
+FOLDERS=("articulos" "nosotros" "servicios")
 
 # Extract first header and footer to temp files
 awk '/<header/{flag=1; count++} flag && count==1; /<\/header>/{flag=0}' "$HOMEPAGE" > /tmp/new_header.html
@@ -43,4 +43,4 @@ for folder in "${FOLDERS[@]}"; do
   done
 done
 
-echo "All files updated!" 
+echo "All files updated!"
