@@ -97,6 +97,18 @@
   }
 }
 
+/* Add margin to about section buttons */
+.about-text .btn + .btn {
+  margin-top: var(--spacing-md);
+}
+
+@media (min-width: 640px) {
+  .about-text .btn + .btn {
+    margin-top: 0;
+    margin-left: var(--spacing-md);
+  }
+}
+
 .hero-features {
   display: grid;
   grid-template-columns: 1fr;
