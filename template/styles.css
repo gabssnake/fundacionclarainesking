@@ -1103,20 +1103,14 @@ a:hover {
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
   margin-bottom: var(--spacing-md);
 }
 
-.footer-logo .logo-text h3 {
-  color: var(--color-white);
-  font-size: var(--font-size-xl);
-  margin: 0;
-}
-
-.footer-logo .logo-text p {
-  color: var(--color-primary-light);
-  font-size: var(--font-size-sm);
-  margin: -0.25rem 0 0 0;
+.footer-logo-svg {
+  height: 2.5rem;
+  width: auto;
+  max-width: 200px;
+  filter: brightness(0) invert(1);
 }
 
 .footer-brand p {
@@ -1194,31 +1188,13 @@ a:hover {
   border-top: 1px solid var(--color-gray-800);
   margin-top: var(--spacing-xl);
   padding-top: var(--spacing-xl);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-md);
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer-bottom {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
-  }
 }
 
 .footer-bottom p {
   color: var(--color-gray-400);
   font-size: var(--font-size-sm);
   margin: 0;
-}
-
-.made-with-love {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
 }
 
 /* Responsive Design */
