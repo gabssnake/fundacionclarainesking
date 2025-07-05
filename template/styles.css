@@ -681,8 +681,8 @@ a:hover {
 }
 
 .program-card.emotional .program-icon {
-  background-color: #ecfeff;
-  color: var(--color-secondary);
+  background-color: #fef3c7;
+  color: #f59e0b;
 }
 
 .program-card.family .program-icon {
@@ -690,16 +690,19 @@ a:hover {
   color: var(--color-accent);
 }
 
-.program-card.talents .program-icon,
-.program-card.career .program-icon,
-.program-card.reorientation .program-icon {
-  background-color: #fef3c7;
-  color: #f59e0b;
-}
-
 .program-card.psychological .program-icon {
   background-color: #f3e8ff;
   color: var(--color-purple);
+}
+
+.program-card.career .program-icon {
+  background-color: #ecfeff;
+  color: var(--color-secondary);
+}
+
+.program-card.reorientation .program-icon {
+  background-color: #fef3c7;
+  color: #f59e0b;
 }
 
 .program-card.consulting .program-icon {
