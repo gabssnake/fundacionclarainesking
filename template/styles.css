@@ -1,12 +1,18 @@
 :root {
   /* Colors */
-  --color-primary: #0d9488;
-  --color-primary-light: #14b8a6;
-  --color-primary-dark: #0f766e;
-  --color-secondary: #06b6d4;
-  --color-accent: #10b981;
-  --color-red: #ef4444;
+  --color-primary: #383F94;
+  --color-primary-light: #4A52A8;
+  --color-primary-dark: #2A3174;
+  --color-secondary: #E1E356;
+  --color-accent: #A8DDE0;
+  --color-green: #8EC54C;
 
+  /* Beige Palette */
+  --color-beige-light: #FFFCF2;
+  --color-beige-medium: #FEF9E4;
+  --color-beige-dark: #FCF3D3;
+
+  /* Grays */
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
   --color-gray-200: #e5e7eb;
@@ -19,7 +25,6 @@
   --color-gray-900: #111827;
 
   --color-white: #ffffff;
-  --color-accent-bg: #f0fdfa;
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -73,7 +78,7 @@ body {
   font-family: var(--font-family-sans);
   line-height: 1.6;
   color: var(--color-gray-700);
-  background-color: var(--color-white);
+  background-color: var(--color-beige-light);
 }
 
 .container {
@@ -161,7 +166,7 @@ a:hover {
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-gray-50);
+  background-color: var(--color-white);
 }
 
 .btn svg {
@@ -183,9 +188,9 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 252, 242, 0.95);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--color-gray-100);
+  border-bottom: 1px solid var(--color-beige-dark);
   z-index: 50;
 }
 
@@ -274,7 +279,7 @@ a:hover {
   flex-direction: column;
   gap: var(--spacing-sm);
   padding: var(--spacing-md) 0;
-  border-top: 1px solid var(--color-gray-100);
+  border-top: 1px solid var(--color-beige-dark);
 }
 
 /* CSS-only mobile menu */
@@ -302,7 +307,7 @@ a:hover {
 /* Hero Section */
 .hero {
   padding: 6rem 0 4rem;
-  background: linear-gradient(135deg, var(--color-gray-50), #ecfdf5, #f0fdfa);
+  background: linear-gradient(135deg, var(--color-beige-light), var(--color-beige-medium));
   text-align: center;
 }
 
@@ -393,7 +398,7 @@ a:hover {
 }
 
 .feature-icon.heart {
-  color: var(--color-red);
+  color: var(--color-primary);
 }
 
 .feature-icon.education {
@@ -448,7 +453,7 @@ a:hover {
 /* About Section */
 #about {
   padding: var(--section-padding);
-  background-color: var(--color-white);
+  background-color: var(--color-beige-light);
 }
 
 .about-content {
@@ -495,13 +500,14 @@ a:hover {
   align-items: flex-start;
   gap: var(--spacing-md);
   padding: var(--spacing-lg);
-  background-color: var(--color-gray-50);
+  background-color: var(--color-beige-light);
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
 }
 
 .visual-card {
   aspect-ratio: 1;
-  background: linear-gradient(135deg, #f0fdfa, #ecfeff);
+  background: linear-gradient(135deg, var(--color-beige-medium), var(--color-beige-dark));
   border-radius: var(--border-radius);
   display: flex;
   flex-direction: column;
@@ -569,7 +575,7 @@ a:hover {
 }
 
 .value-highlight {
-  background-color: var(--color-gray-50);
+  background-color: var(--color-beige-medium);
   border-radius: var(--border-radius);
   padding: var(--spacing-xl);
   text-align: center;
@@ -586,7 +592,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin: 0 auto var(--spacing-lg);
-  background-color: var(--color-accent-bg);
+  background-color: var(--color-white);
 }
 
 .value-icon.purpose {
@@ -618,7 +624,7 @@ a:hover {
 /* Programs Section */
 #programs {
   padding: var(--section-padding);
-  background-color: var(--color-gray-50);
+  background-color: var(--color-beige-medium);
 }
 
 .programs-grid {
@@ -641,7 +647,7 @@ a:hover {
 }
 
 .program-card {
-  background-color: var(--color-white);
+  background-color: var(--color-beige-light);
   border-radius: var(--border-radius);
   padding: var(--spacing-xl);
   box-shadow: var(--shadow-lg);
@@ -649,6 +655,7 @@ a:hover {
 }
 
 .program-card:hover {
+  background-color: var(--color-white);
   box-shadow: var(--shadow-lg);
   transform: var(--hover-lift);
 }
@@ -661,7 +668,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: var(--spacing-md);
-  background-color: var(--color-accent-bg);
+  background-color: var(--color-white);
 }
 
 .program-card.academic .program-icon {
@@ -673,7 +680,7 @@ a:hover {
 }
 
 .program-card.family .program-icon {
-  color: var(--color-accent);
+  color: var(--color-green);
 }
 
 .program-card.psychological .program-icon {
@@ -681,7 +688,7 @@ a:hover {
 }
 
 .program-card.career .program-icon {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .program-card.reorientation .program-icon {
@@ -689,7 +696,7 @@ a:hover {
 }
 
 .program-card.consulting .program-icon {
-  color: var(--color-accent);
+  color: var(--color-green);
 }
 
 .program-icon svg {
@@ -719,7 +726,7 @@ a:hover {
 /* Articles Section */
 #articles {
   padding: var(--section-padding);
-  background-color: var(--color-white);
+  background-color: var(--color-beige-light);
 }
 
 .articles-grid {
@@ -742,7 +749,7 @@ a:hover {
 }
 
 .article-card {
-  background-color: var(--color-white);
+  background-color: var(--color-beige-light);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
@@ -750,13 +757,14 @@ a:hover {
 }
 
 .article-card:hover {
+  background-color: var(--color-white);
   box-shadow: var(--shadow-lg);
   transform: var(--hover-lift);
 }
 
 .article-image {
   aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, #f0fdfa, #ecfeff);
+  background: linear-gradient(135deg, var(--color-beige-medium), var(--color-beige-dark));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -819,7 +827,7 @@ a:hover {
 /* Considerations Section */
 #considerations {
   padding: var(--spacing-3xl) 0;
-  background-color: var(--color-gray-50);
+  background-color: var(--color-beige-medium);
 }
 
 .considerations-content {
@@ -850,7 +858,7 @@ a:hover {
 }
 
 .quote-card {
-  background-color: var(--color-white);
+  background-color: var(--color-beige-light);
   padding: var(--spacing-xl);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
@@ -876,7 +884,7 @@ a:hover {
   text-align: center;
   margin-top: var(--spacing-2xl);
   padding-top: var(--spacing-xl);
-  border-top: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--color-beige-dark);
 }
 
 .consideration-cta p {
@@ -891,7 +899,7 @@ a:hover {
 /* Contact Section */
 #contact {
   padding: var(--section-padding);
-  background-color: var(--color-gray-50);
+  background-color: var(--color-beige-medium);
 }
 
 .contact-item {
@@ -899,7 +907,7 @@ a:hover {
   align-items: flex-start;
   gap: var(--spacing-md);
   padding: var(--spacing-lg);
-  background-color: var(--color-white);
+  background-color: var(--color-beige-light);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
 }
@@ -912,23 +920,23 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background-color: var(--color-accent-bg);
+  background-color: var(--color-white);
 }
 
 .contact-icon.phone {
-  color: var(--color-secondary);
-}
-
-.contact-icon.email {
-  color: var(--color-accent);
-}
-
-.contact-icon.location {
   color: var(--color-primary);
 }
 
-.contact-icon.help {
+.contact-icon.email {
+  color: var(--color-secondary);
+}
+
+.contact-icon.location {
   color: var(--color-accent);
+}
+
+.contact-icon.help {
+  color: var(--color-green);
 }
 
 .contact-icon svg {
@@ -1049,7 +1057,7 @@ a:hover {
 }
 
 .footer-nav a:hover {
-  color: var(--color-primary-light);
+  color: var(--color-secondary);
 }
 
 .footer-contact p {
@@ -1063,7 +1071,7 @@ a:hover {
 }
 
 .footer-contact a:hover {
-  color: var(--color-primary-light);
+  color: var(--color-secondary);
 }
 
 .footer-bottom {
