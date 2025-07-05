@@ -9,8 +9,8 @@ awk '/<header/{flag=1; count++} flag && count==1; /<\/header>/{flag=0}' "$HOMEPA
 awk '/<footer/{flag=1; count++} flag && count==1; /<\/footer>/{flag=0}' "$HOMEPAGE" > /tmp/new_footer.html
 
 # Fix anchor links in header and footer
-sed 's/href="#/href="index.html#/g' /tmp/new_header.html > /tmp/new_header_fixed.html
-sed 's/href="#/href="index.html#/g' /tmp/new_footer.html > /tmp/new_footer_fixed.html
+sed 's/href="#/href="..\/index.html#/g' /tmp/new_header.html > /tmp/new_header_fixed.html
+sed 's/href="#/href="..\/index.html#/g' /tmp/new_footer.html > /tmp/new_footer_fixed.html
 
 # Fix image paths in header and footer
 sed 's/src="\([^"]*\)"/src="..\/\1"/g' /tmp/new_header_fixed.html > /tmp/new_header_final.html
