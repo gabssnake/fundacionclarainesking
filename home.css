@@ -1,9 +1,8 @@
-
 /* ************************************************* */
 /* Hero Section */
 
 .hero {
-  padding: 8rem 0 6rem;
+  padding: var(--below-nav-spacing) 0 6rem;
   background-color: var(--color-beige-light);
   background-image: url('wave.svg');
   background-repeat: no-repeat;
@@ -179,7 +178,7 @@
 
 @media (max-width: 767px) {
   .hero {
-    padding: 5rem 0 3rem;
+    padding: var(--below-nav-spacing-mobile) 0 3rem;
   }
   
   .hero-content {

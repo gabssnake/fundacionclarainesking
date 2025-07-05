@@ -37,6 +37,10 @@
   --spacing-2xl: 3rem;
   --spacing-3xl: 4rem;
 
+  /* Navigation spacing */
+  --below-nav-spacing: 8rem;
+  --below-nav-spacing-mobile: 5rem;
+
   /* Typography */
   --font-family-sans: 'Inter', system-ui, sans-serif;
   --font-size-xs: 0.75rem;
