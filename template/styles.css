@@ -20,6 +20,7 @@
 
   --color-white: #ffffff;
   --color-red: #ef4444;
+  --color-accent-bg: #f0fdfa;
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -47,12 +48,19 @@
   /* Layout */
   --container-max-width: 1200px;
   --border-radius: 0.5rem;
+  --section-padding: 4rem 0;
   --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
   /* Transitions */
   --transition: all 0.2s ease-in-out;
   --transition-slow: all 0.3s ease-in-out;
+  
+  /* Effects */
+  --hover-lift: translateY(-0.25rem);
+  
+  /* Grid Patterns */
+  --grid-3-cols: repeat(3, 1fr);
 }
 
 /* Reset and Base Styles */
@@ -170,22 +178,14 @@ a:hover {
   color: var(--color-white);
 }
 
-.btn-secondary {
-  background-color: transparent;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-}
-
-.btn-secondary:hover {
-  background-color: var(--color-gray-50);
-}
-
+.btn-secondary,
 .btn-outline {
   background-color: transparent;
   color: var(--color-primary);
   border: 1px solid var(--color-primary);
 }
 
+.btn-secondary:hover,
 .btn-outline:hover {
   background-color: var(--color-gray-50);
 }
@@ -287,6 +287,13 @@ a:hover {
   border: none;
   cursor: pointer;
   padding: var(--spacing-sm);
+  outline: none;
+}
+
+.mobile-menu-toggle:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--border-radius);
 }
 
 .mobile-menu-toggle span {
@@ -405,7 +412,7 @@ a:hover {
 
 @media (min-width: 640px) {
   .hero-features {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: var(--grid-3-cols);
     max-width: none;
     align-items: start;
   }
@@ -426,14 +433,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: var(--spacing-md);
-  background-color: var(--color-white) !important;
+  background-color: var(--color-white);
   box-shadow: var(--shadow);
-}
-
-.feature-icon.heart,
-.feature-icon.education,
-.feature-icon.family {
-  background-color: var(--color-white) !important;
 }
 
 .feature-icon.heart {
@@ -490,8 +491,8 @@ a:hover {
 }
 
 /* About Section */
-.about {
-  padding: 4rem 0;
+#about {
+  padding: var(--section-padding);
   background-color: var(--color-white);
 }
 
@@ -608,7 +609,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .values-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: var(--grid-3-cols);
   }
 }
 
@@ -630,20 +631,18 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin: 0 auto var(--spacing-lg);
+  background-color: var(--color-accent-bg);
 }
 
 .value-icon.purpose {
-  background-color: #f0fdfa;
   color: var(--color-primary);
 }
 
 .value-icon.innovation {
-  background-color: #ecfeff;
   color: var(--color-secondary);
 }
 
 .value-icon.family-focus {
-  background-color: #ecfdf5;
   color: var(--color-accent);
 }
 
@@ -662,8 +661,8 @@ a:hover {
 }
 
 /* Programs Section */
-.programs {
-  padding: 4rem 0;
+#programs {
+  padding: var(--section-padding);
   background-color: var(--color-gray-50);
 }
 
@@ -682,7 +681,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   .programs-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: var(--grid-3-cols);
   }
 }
 
@@ -696,7 +695,7 @@ a:hover {
 
 .program-card:hover {
   box-shadow: var(--shadow-lg);
-  transform: translateY(-0.25rem);
+  transform: var(--hover-lift);
 }
 
 .program-icon {
@@ -710,37 +709,37 @@ a:hover {
 }
 
 .program-card.academic .program-icon {
-  background-color: #f0fdfa;
+  background-color: var(--color-accent-bg);
   color: var(--color-primary);
 }
 
 .program-card.emotional .program-icon {
-  background-color: #fef3c7;
-  color: #f59e0b;
+  background-color: var(--color-accent-bg);
+  color: var(--color-accent);
 }
 
 .program-card.family .program-icon {
-  background-color: #ecfdf5;
+  background-color: var(--color-accent-bg);
   color: var(--color-accent);
 }
 
 .program-card.psychological .program-icon {
-  background-color: #f3e8ff;
-  color: var(--color-purple);
+  background-color: var(--color-accent-bg);
+  color: var(--color-secondary);
 }
 
 .program-card.career .program-icon {
-  background-color: #ecfeff;
+  background-color: var(--color-accent-bg);
   color: var(--color-secondary);
 }
 
 .program-card.reorientation .program-icon {
-  background-color: #fef3c7;
-  color: #f59e0b;
+  background-color: var(--color-accent-bg);
+  color: var(--color-accent);
 }
 
 .program-card.consulting .program-icon {
-  background-color: #ecfdf5;
+  background-color: var(--color-accent-bg);
   color: var(--color-accent);
 }
 
@@ -769,8 +768,8 @@ a:hover {
 }
 
 /* Articles Section */
-.articles {
-  padding: 4rem 0;
+#articles {
+  padding: var(--section-padding);
   background-color: var(--color-white);
 }
 
@@ -789,7 +788,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   .articles-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: var(--grid-3-cols);
   }
 }
 
@@ -803,7 +802,7 @@ a:hover {
 
 .article-card:hover {
   box-shadow: var(--shadow-lg);
-  transform: translateY(-0.25rem);
+  transform: var(--hover-lift);
 }
 
 .article-image {
@@ -855,7 +854,7 @@ a:hover {
 }
 
 /* Considerations Section */
-.considerations {
+#considerations {
   padding: var(--spacing-4xl) 0;
   background-color: var(--color-gray-50);
 }
@@ -927,8 +926,8 @@ a:hover {
 }
 
 /* Contact Section */
-.contact {
-  padding: 4rem 0;
+#contact {
+  padding: var(--section-padding);
   background-color: var(--color-gray-50);
 }
 
@@ -971,24 +970,24 @@ a:hover {
   flex-shrink: 0;
 }
 
+.contact-icon {
+  background-color: var(--color-accent-bg);
+}
+
 .contact-icon.phone {
-  background-color: #ecfeff;
   color: var(--color-secondary);
 }
 
 .contact-icon.email {
-  background-color: #ecfdf5;
   color: var(--color-accent);
 }
 
 .contact-icon.location {
-  background-color: #f0fdfa;
   color: var(--color-primary);
 }
 
 .contact-icon.help {
-  background-color: #fef3c7;
-  color: #f59e0b;
+  color: var(--color-accent);
 }
 
 .contact-icon svg {
@@ -1145,10 +1144,10 @@ a:hover {
     padding: 5rem 0 3rem;
   }
 
-  .about,
-  .programs,
-  .articles,
-  .contact {
+  #about,
+  #programs,
+  #articles,
+  #contact {
     padding: 3rem 0;
   }
 
