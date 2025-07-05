@@ -542,6 +542,71 @@ a:hover {
   position: relative;
 }
 
+.experience-highlight {
+  background: linear-gradient(135deg, #f0fdfa, #ecfeff);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  border-left: 4px solid var(--color-primary);
+}
+
+.highlight-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.highlight-icon svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-white);
+}
+
+.highlight-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.highlight-stat {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-700);
+  line-height: 1.4;
+}
+
+.highlight-stat strong {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .contact-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background-color: var(--color-gray-50);
+  border-radius: var(--border-radius);
+}
+
 .visual-card {
   aspect-ratio: 1;
   background: linear-gradient(135deg, #f0fdfa, #ecfeff);
@@ -611,19 +676,17 @@ a:hover {
   }
 }
 
-.value-card {
-  background-color: var(--color-white);
+.value-highlight {
+  background-color: var(--color-gray-50);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl);
   text-align: center;
-  box-shadow: var(--shadow-lg);
-  transition: var(--transition-slow);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
-.value-card:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-0.25rem);
-}
+
 
 .value-icon {
   width: 4rem;
@@ -655,11 +718,11 @@ a:hover {
   height: 2rem;
 }
 
-.value-card h3 {
+.value-content h3 {
   margin-bottom: var(--spacing-md);
 }
 
-.value-card p {
+.value-content p {
   line-height: 1.7;
   margin: 0;
 }
@@ -962,15 +1025,17 @@ a:hover {
   }
 }
 
-.contact-card {
-  background-color: var(--color-white);
-  border-radius: var(--border-radius-lg);
-  padding: var(--spacing-lg);
-  box-shadow: var(--shadow-lg);
+.contact-item {
   display: flex;
   align-items: flex-start;
   gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
 }
+
+
 
 .contact-icon {
   width: 3rem;
