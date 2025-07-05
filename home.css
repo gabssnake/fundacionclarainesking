@@ -883,11 +883,15 @@
   color: var(--color-gray-600);
   margin: 0;
   line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contact-details a {
   color: var(--color-primary);
   transition: var(--transition);
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .contact-details a:hover {
