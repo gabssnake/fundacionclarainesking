@@ -240,37 +240,19 @@ a:hover {
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
   color: var(--color-gray-900);
 }
 
-.logo-icon {
-  width: 2.5rem;
+.logo-svg {
   height: 2.5rem;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-primary), var(--color-secondary));
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-white);
-  font-weight: 700;
-  font-size: var(--font-size-lg);
-}
-
-.logo-text h1 {
-  font-size: var(--font-size-xl);
-  margin: 0;
-}
-
-.logo-text p {
-  font-size: var(--font-size-sm);
-  color: var(--color-primary);
-  margin: -0.25rem 0 0 0;
+  width: auto;
+  max-width: 200px;
 }
 
 @media (max-width: 639px) {
-  .logo-text {
-    display: none;
+  .logo-svg {
+    height: 2rem;
+    max-width: 150px;
   }
 }
 
