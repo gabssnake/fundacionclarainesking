@@ -982,6 +982,80 @@ a:hover {
   height: 0.75rem;
 }
 
+
+
+/* Considerations Section */
+.considerations {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-gray-50);
+}
+
+.considerations-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.consideration-text {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.consideration-text p {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-700);
+  margin-bottom: var(--spacing-lg);
+}
+
+.quotes-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+  .quotes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.quote-card {
+  background-color: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--color-primary);
+  margin: 0;
+}
+
+.quote-card p {
+  font-size: var(--font-size-lg);
+  font-style: italic;
+  color: var(--color-gray-700);
+  margin-bottom: var(--spacing-md);
+}
+
+.quote-card cite {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-600);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.consideration-cta {
+  text-align: center;
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.consideration-cta p {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-700);
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Contact Section */
 .contact {
   padding: 4rem 0;
